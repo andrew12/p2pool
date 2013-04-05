@@ -176,7 +176,7 @@ nets = dict(
         POW_FUNC=data.hash256,
         BLOCK_PERIOD=600, # s
         SYMBOL='BTE',
-        CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Bitcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Bitcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.bitcoin'), 'bitcoin.conf'),
+        CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Bytecoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Bytecoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.bytecoin'), 'bytecoin.conf'),
         BLOCK_EXPLORER_URL_PREFIX='http://blockexplorer.bytecoin.in/block/',
         ADDRESS_EXPLORER_URL_PREFIX='http://blockexplorer.bytecoin.in/address/',
         SANE_TARGET_RANGE=(2**256//2**32//1000 - 1, 2**256//2**32 - 1),
